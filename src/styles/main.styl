@@ -1,0 +1,724 @@
+fontRegular = ProximaNovaRegular
+fontBold = ProximaNovaBold
+fontExtraBold = ProximaNovaExtraBold
+fontBlack = ProximaNovaBlack
+fontLight = ProximaNovaLight
+colorWhite = #ffffff
+colorBlack = #000000
+colorBlue = #201b57
+colorRed = #ef4151
+colorPurple = #7f4f8f
+
+@font-face
+  font-family ProximaNovaRegular
+  src url(../assets/fonts/ProximaNova-Regular.woff2) format('woff2'),
+  url(../assets/fonts/ProximaNova-Regular.woff) format('woff')
+
+@font-face
+  font-family ProximaNovaBold
+  src url(../assets/fonts/ProximaNova-Bold.woff2) format('woff2'),
+  url(../assets/fonts/ProximaNova-Bold.woff) format('woff')
+
+@font-face
+  font-family ProximaNovaExtraBold
+  src url(../assets/fonts/ProximaNova-Extrabld.woff2) format('woff2'),
+  url(../assets/fonts/ProximaNova-Extrabld.woff) format('woff')
+
+@font-face
+  font-family ProximaNovaBlack
+  src url(../assets/fonts/ProximaNova-Black.woff2) format('woff2'),
+  url(../assets/fonts/ProximaNova-Black.woff) format('woff')
+
+@font-face
+  font-family ProximaNovaLight
+  src url(../assets/fonts/ProximaNova-Light.woff2) format('woff2'),
+  url(../assets/fonts/ProximaNova-Light.woff) format('woff')
+
+@font-face {
+  font-family PTRoubleSans
+  src url(../assets/fonts/RUBSN.woff2) format('woff2'),
+  url(../assets/fonts/RUBSN.woff) format('woff')
+}
+
+//outline fix
+input
+textarea
+  resize none
+
+button
+a
+  display inline-block
+  &:focus
+    box-shadow none
+
+//bootstrap macOs fix
+.row
+  &:before
+  &:after
+    display inline-block !important
+    content normal
+
+//styles
+body
+  font-family fontRegular, Arial, sans-serif
+  font-size 16px
+  color colorBlack
+  line-height 1
+  background-color colorWhite
+
+a
+.btn
+  color colorWhite
+  &:hover
+  &:focus
+    color colorWhite
+    text-decoration none
+
+img
+  display block
+  margin auto
+  max-width 100%
+  max-height 100%
+
+ul
+  margin 0
+  padding 0
+
+.container
+  padding 0 10px
+
+.row
+  margin-left -10px
+  margin-right -10px
+
+.col
+[class*="col-"]
+  padding-left 10px
+  padding-right 10px
+
+header
+.header
+  position fixed
+  top 0
+  z-index 1000
+  width 100%
+  background-color colorWhite
+  box-shadow 0px 1px 3px rgba(0,0,0,0.10)
+
+.header-phone
+  font-family fontExtraBold
+  font-size 30px
+  color colorRed
+  text-align center
+  margin-top 45px
+  &:hover
+  &:focus
+    color colorRed
+
+.header-logo
+  max-width 196px
+  margin 0
+
+.navbar
+  padding 10px 20px
+
+.navbar-collapse
+  padding 35px 0 20px
+
+.menu-item
+  margin 10px 0
+  &.active
+    .menu-link
+      color colorRed
+
+.menu-link
+  font-family fontBold
+  font-size 30px
+  line-height 1.17
+  color colorBlue
+  text-align center
+  text-transform uppercase
+  letter-spacing 0.5px
+  display block
+  &:hover
+  &:focus
+    color colorBlue
+  &.active
+    color colorRed
+
+section
+  padding-top 120px
+
+.screen-top
+  position relative
+  overflow hidden
+  padding-top 40px
+  margin-top 65px
+
+.bg-top-left
+  position absolute
+  bottom 50%
+  left 0
+  width 150px
+
+.bg-top-right
+  position absolute
+  bottom 50%
+  right 0
+  width 170px
+  background url("../assets/images/bg.svg") no-repeat center
+
+.title-main
+  font-family fontExtraBold
+  font-size 30px
+  line-height 1.55
+  color colorBlue
+  text-align center
+  margin-bottom 68%
+
+.title
+  font-family fontExtraBold
+  font-size 30px
+  line-height 1.3
+  color colorBlue
+  text-align center
+  margin-bottom 20px
+
+.text-top
+  font-family fontRegular
+  font-size 20px
+  line-height 1.55
+  color colorBlack
+  text-align center
+  margin-bottom 30px
+
+.text
+  font-family fontRegular
+  font-size 18px
+  line-height 1.55
+  color colorBlack
+  text-align center
+  margin-bottom 30px
+
+.order-buttons
+  display flex
+  flex-direction column
+
+.btn
+  font-family fontExtraBold
+  font-size 14px
+  color colorWhite
+  line-height 1
+  text-transform uppercase
+  width 200px
+  padding 20px
+  border 0
+  border-radius 30px
+  display block
+  margin auto
+  margin-bottom 10px
+  &.disabled
+    opacity 0.4
+
+.btn-small
+  width 120px
+  padding 13px
+  text-transform none
+
+.btn-red
+  background-color colorRed
+
+.btn-blue
+  background-color colorBlue
+
+.btn-purple
+  background-color colorPurple
+
+.work
+  display flex
+  margin-top 80px
+
+.wrapper-row
+  display flex
+
+.work-number
+  display flex
+  align-items center
+  justify-content center
+  flex-shrink 0
+  width 55px
+  height 55px
+  font-family fontBold
+  font-size 40px
+  color colorWhite
+  background-color colorRed
+  border-radius 100%
+  margin-right 20px
+
+.work-title
+  font-family fontBold
+  font-size 22px
+  line-height 1.3
+  color colorBlack
+  margin-bottom 20px
+
+.work-text
+  font-family fontRegular
+  font-size 18px
+  line-height 1.55
+  color colorBlack
+  margin-bottom 15px
+
+.device
+  display flex
+  flex-direction column
+  margin-bottom 20px
+
+.device-img
+  position relative
+  flex-shrink 0
+  height 160px
+  margin-bottom 20px
+  img
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    margin auto
+
+.device-title
+  font-family fontBold
+  font-size 20px
+  line-height 1.55
+  color colorBlack
+  margin-top 80px
+
+.device-text
+  font-family fontRegular
+  font-size 16px
+  line-height 1.55
+  color colorBlack
+
+.features
+  display flex
+  flex-wrap wrap
+  justify-content space-around
+  padding 10px
+  border 1px solid rgba(32,27,87,0.2)
+  margin 15px 10px
+
+.feature
+  display flex
+  padding 10px 0
+
+.feature-img
+  width 50px
+  height 50px
+  margin 0 15px 0 0
+
+.feature-text
+  font-family fontRegular
+  font-size 14px
+  line-height 1.55
+  color colorBlue
+
+.save
+  margin-bottom 30px
+
+.save-number
+  display flex
+  align-items center
+  justify-content center
+  flex-shrink 0
+  width 45px
+  height 45px
+  font-family fontBold
+  font-size 30px
+  color colorWhite
+  background-color colorRed
+  border-radius 100%
+  margin-right 15px
+
+.save-title
+  font-family fontBold
+  font-size 18px
+  line-height 1.55
+  color colorBlack
+
+.reasons-text
+  font-family fontLight
+  font-size 20px
+  line-height 1.4
+  color colorBlue
+  text-align center
+  span
+    font-family fontBlack
+
+.reason
+  padding-top 45px
+  margin-bottom 45px
+  + .reason
+    border-top 1px solid #d1d1d1
+
+.reason-img
+  width 100px
+  height 100px
+  margin-bottom 30px
+
+.reason-title
+  font-family fontExtraBold
+  font-size 20px
+  line-height 1.35
+  color colorRed
+  text-align center
+  margin-bottom 12px
+
+.reason-text
+  font-family fontLight
+  font-size 14px
+  line-height 1.45
+  color colorBlack
+  text-align center
+
+.order-img
+  margin-bottom 30px
+
+.order
+  display flex
+  margin-bottom 20px
+
+.order-number
+  display flex
+  align-items center
+  justify-content center
+  flex-shrink 0
+  width 45px
+  height 45px
+  font-family fontBold
+  font-size 30px
+  color colorWhite
+  background-color colorRed
+  border-radius 100%
+  margin-right 10px
+
+.order-title
+  font-family fontBold
+  font-size 14px
+  line-height 1.3
+  color colorBlack
+  margin-bottom 8px
+
+.order-text
+  font-family fontRegular
+  font-size 12px
+  line-height 1.55
+  color colorBlack
+
+.prices
+  margin-bottom 40px
+
+.price
+  font-family fontBold
+  font-size 18px
+  line-height 1.2
+  color colorBlack
+  text-align center
+  margin-bottom 15px
+  span
+    color colorRed
+
+.sign-rouble
+  font-family PTRoubleSans
+  font-size 16px
+  font-weight bold
+
+.text-small
+  font-family fontRegular
+  font-size 10px
+  line-height 1.55
+  color colorBlack
+  text-align center
+
+.help-img-main
+  margin-bottom 75px
+
+.help
+  display flex
+  margin-bottom 40px
+
+.help-img
+  width 50px
+  height 50px
+  margin 0
+
+.help-wrapper
+  margin-left 30px
+
+.help-title
+  font-family fontExtraBold
+  font-size 24px
+  line-height 1.17
+  color colorBlue
+  margin-bottom 10px
+
+.help-text
+  font-family fontLight
+  font-size 12px
+  line-height 1.45
+  color colorBlack
+
+.info-img
+  height 186px
+  margin-bottom 25px
+
+.info-text
+  font-family fontRegular
+  font-size 18px
+  line-height 1.45
+  color colorBlack
+  text-align center
+  margin-bottom 25px
+
+.accordion
+  margin 40px 0 20px
+
+footer
+.footer
+  background-color colorBlue
+  padding 60px 0 75px
+
+.footer-logo
+  width 100%
+  max-width 350px
+  margin 0 auto 50px
+
+.footer-text
+  font-family fontRegular
+  font-size 24px
+  line-height 1.1
+  color colorWhite
+  text-align center
+  margin-bottom 40px
+
+.footer-links
+  margin-bottom 40px
+  text-align center
+
+.footer-link
+  font-family fontExtraBold
+  font-size 14px
+  color colorWhite
+  text-transform uppercase
+  margin 0 15px 20px
+
+.footer-text-small
+  font-family fontRegular
+  font-size 14px
+  line-height 1.1
+  color colorWhite
+  text-align center
+  opacity 0.7
+
+button.close
+  svg
+    position absolute
+    top 20px
+    right 20px
+    z-index 10
+    opacity 1
+    width 23px
+    height 23px
+
+.close:not(:disabled):not(.disabled):hover
+.close:not(:disabled):not(.disabled):focus
+  opacity 1
+
+.modal-dialog
+  margin 50px auto
+
+.modal-content
+  border 0
+  border-radius 0
+  .title
+    font-size 28px
+
+.modal-body
+  padding 20px
+
+.form-group
+  margin-bottom 20px
+
+.form-control
+  height 50px
+  padding 0 14px
+  font-size 16px
+  color colorBlack
+  line-height 1
+  background-color transparent
+  border 1px solid #c9c9c9
+  border-radius 5px
+  transition none
+  :placeholder
+    opacity 0.3
+  &:focus
+    color colorBlack
+    background-color transparent
+    border-color #c9c9c9
+    box-shadow none
+
+.form-check
+  padding-left 30px
+
+.form-check-input
+  width 20px
+  height 20px
+  border 2px solid colorBlack
+  top 2px
+  left 0
+  margin 0
+
+.form-check-label
+  font-family fontLight
+  font-size 12px
+  line-height 1.45
+  color colorBlack
+
+.form-link
+  color colorRed
+  &:hover
+  &:focus
+    color colorRed
+
+.rules-title
+  font-family fontBold
+  font-size 26px
+  line-height 1.17
+  color colorBlack
+  text-align center
+  margin-bottom 17px
+
+.rules-text
+  font-family fontRegular
+  font-size 12px
+  line-height 1.45
+  color colorBlack
+  text-align center
+
+.faq-wrapper
+  position relative
+  border-top 1px solid colorBlue
+  &:last-of-type
+    border-bottom 1px solid colorBlue
+
+.faq-header
+  display flex
+  align-items center
+  justify-content space-between
+  padding 27px 0
+  cursor pointer
+  &:hover
+    .icon
+      background #eee
+      color colorBlack
+  &[aria-expanded="true"]
+    .icon
+      transform rotate(-45deg)
+
+.icon
+  display flex
+  align-items center
+  justify-content center
+  flex-shrink 0
+  width 40px
+  height 40px
+  border-radius 100%
+  background colorRed
+  font-family Arial, sans-serif
+  font-size 45px
+  color colorWhite
+  transition all ease-in-out 0.3s
+
+.faq-title
+  font-family fontBold
+  font-size 20px
+  line-height 1.35
+  color colorBlack
+  position relative
+  z-index 10
+  width 100%
+  padding-right 30px
+
+.faq-text
+  font-family fontRegular
+  font-size 16px
+  line-height 1.45
+  color colorBlack
+  margin-bottom 40px
+
+.title-feedback
+  font-family fontExtraBold
+  font-size 30px
+  line-height 1.23
+  color colorBlue
+  text-align center
+  margin-bottom 40px
+
+.text-feedback
+  font-family fontLight
+  font-size 20px
+  line-height 1.4
+  color colorBlack
+  text-align center
+
+.link-back
+  display flex
+  align-items center
+  justify-content center
+  font-family fontBlack
+  font-size 16px
+  color colorBlue
+  text-transform uppercase
+  width 276px
+  height 66px
+  margin 90px auto
+  background colorWhite
+  border 3px solid colorBlue
+  &:hover
+  &:focus
+    color colorBlue
+
+/** Hamburger icon **/
+.navbar-toggler
+  padding 0
+  border 0
+  &:hover
+  &:focus
+    outline none
+
+.navbar-toggler .icon-bar
+  display block
+  width 28px
+  height 3px
+  background colorBlack
+  position relative
+  transform rotate(0)
+  transform-origin left center
+  transition all 0.25s
+
+.navbar-toggler .icon-bar+.icon-bar
+  margin-top 5px
+
+.navbar-toggler.active .icon-bar:nth-of-type(1)
+  -webkit-transform rotate(45deg)
+  transform rotate(45deg)
+  top 0
+
+.navbar-toggler.active .icon-bar:nth-of-type(2)
+  opacity 0
+
+.navbar-toggler.active .icon-bar:nth-of-type(3)
+  -webkit-transform rotate(-45deg)
+  transform rotate(-45deg)
+  top: 4px
+/** Hamburger icon end**/
